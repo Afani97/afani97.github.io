@@ -23,21 +23,54 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
+}
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 50px;
+  clear:both;
+
+}
+p {
+  margin-left: 10px;
+  overflow:auto;
+  display:block;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #333;
+}
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 24pt;
+  }
+  img {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    display: block;
+
+  }
+  p {
+    float: none;
+    margin: auto;
+    font-size: 12pt;
+  }
 }
